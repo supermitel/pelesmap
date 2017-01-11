@@ -1,0 +1,191 @@
+{
+  "name":"castelul Demo",
+  "descriptionShort":"Castelul Demo este extraordinar",
+  "descriptionLong":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices nunc neque, quis cursus nulla cursus sed. Integer laoreet sit amet nisi at consequat. Aliquam elementum aliquet lectus ac lacinia. Sed lacinia nisl at lorem laoreet tempor eu id nulla. Sed vitae faucibus quam. Donec et nibh et dolor sagittis fringilla gravida eget leo. Fusce molestie massa vel tellus volutpat scelerisque. Quisque dignissim ultrices nisl dictum consequat. Pellentesque sit amet massa finibus, malesuada lectus vel, fermentum quam. Pellentesque condimentum tortor augue. Donec condimentum scelerisque augue vel suscipit. Suspendisse non feugiat erat. Mauris quis auctor lectus, vitae tincidunt tortor. Donec ullamcorper neque eget euismod porttitor. Praesent odio tortor, tempor in facilisis a, vulputate quis purus. Donec dictum erat in leo sollicitudin, sed sollicitudin sem tincidunt. ",
+  "levels":[
+    {
+      "name": "Etajul 1",
+      "number": "1",
+      "id": "L01",
+      "rooms":[
+        {
+          "number": "01",
+          "id": "L01R01",
+          "name": "Marele Hol",
+          "description": "Pe-aici trecea lumea. Se mai făcea și câte un Bal din când în când",
+          "pictures":[
+            {
+              "label": "poza01",
+              "url": "http://lorempixel.com/480/640/"
+            },
+            {
+              "label": "poza02",
+              "url": "http://lorempixel.com/480/480/"
+            },
+            {
+              "label": "poza03",
+              "url": "http://lorempixel.com/640/480/"
+            }
+          ],
+          "exhibit":[
+            {
+              "name": "vază secolul XXI",
+              "description": "E o vază. Se pun flori în ea",
+              "pictures":[
+                {
+                  "label":"din față",
+                  "url":"http://lorempixel.com/640/480/nature/"
+                },
+                {
+                  "label":"din lateral",
+                  "url":"http://lorempixel.com/640/480/nature/"
+                },
+                {
+                  "label":"din spate",
+                  "url":"http://lorempixel.com/640/480/nature/"
+                },
+                {
+                  "label":"în secțiune",
+                  "url":"http://lorempixel.com/640/480/nature/"
+                }
+              ]
+            },
+            {
+              "name": "tablou abstract",
+              "description": "atârnă pe perete și gâdilă privirea",
+              "pictures":[
+                {
+                  "label":"văzut dimineața",
+                  "url":"http://lorempixel.com/640/480/abstract/"
+                },
+                {
+                  "label":"văzut la prânz",
+                  "url":"http://lorempixel.com/640/480/abstract/"
+                },
+                {
+                  "label":"văzut seara",
+                  "url":"http://lorempixel.com/640/480/abstract/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "02",
+          "id": "L01R02",
+          "name": "Sala Tronului",
+          "description": "Aici, marele rege Demo dădea porunci și împărțea legea.",
+          "pictures":[
+            {
+              "label": "poza01",
+              "url": "http://lorempixel.com/480/640/"
+            },
+            {
+              "label": "poza02",
+              "url": "http://lorempixel.com/480/480/"
+            },
+            {
+              "label": "poza03",
+              "url": "http://lorempixel.com/640/480/"
+            }
+          ],
+          "exhibit":[
+            {
+              "name": "marele tron",
+              "description": "aici ședea marele rege Demo",
+              "pictures":[
+                {
+                  "label": "poza01",
+                  "url": "http://lorempixel.com/480/640/"
+                },
+                {
+                  "label": "poza01",
+                  "url": "http://lorempixel.com/480/480/"
+                }
+              ]
+            },
+            {
+              "name": "tronul cel mic",
+              "description": "aici ședea regina",
+              "pictures":[
+                {
+                  "label": "poza01",
+                  "url": "http://lorempixel.com/640/640/"
+                },
+                {
+                  "label": "poza01",
+                  "url": "http://lorempixel.com/640/480/"
+                }
+              ]
+            },
+            {
+              "name": "băncile consilierilor",
+              "description": "aici ședeau consilierii regelui",
+              "pictures":[
+                {
+                  "label": "poza01",
+                  "url": "http://lorempixel.com/640/640/"
+                },
+                {
+                  "label": "poza01",
+                  "url": "http://lorempixel.com/640/480/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "03",
+          "id": "L01R03",
+          "name": "Sala de Consiliu",
+          "description": "Aici, marele rege Demo se sfătuia cu consilierii săi.",
+          "pictures":[
+            {
+              "label": "poza01",
+              "url": "http://lorempixel.com/480/640/"
+            },
+            {
+              "label": "poza02",
+              "url": "http://lorempixel.com/480/480/"
+            },
+            {
+              "label": "poza03",
+              "url": "http://lorempixel.com/640/480/"
+            }
+          ],
+          "exhibit":[
+            {
+              "name": "masa dreptunghiulară",
+              "description": "regele Demo stătea în capul mesei",
+              "pictures":[
+                {
+                  "label": "poza01",
+                  "url": "http://lorempixel.com/480/640/"
+                },
+                {
+                  "label": "poza02",
+                  "url": "http://lorempixel.com/480/480/"
+                }
+              ]
+            },
+            {
+              "name": "candelabrul sfatului",
+              "description": "atârna și lumina",
+              "pictures":[
+                {
+                  "label": "poza01",
+                  "url": "http://lorempixel.com/480/640/technics/"
+                },
+                {
+                  "label": "poza01",
+                  "url": "http://lorempixel.com/480/640/technics/"
+                }
+              ]
+            }
+          ]
+        }
+
+      ]
+    }
+  ]
+}
