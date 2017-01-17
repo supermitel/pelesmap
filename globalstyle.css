@@ -31,9 +31,15 @@ body{
     overflow: hidden;
 }
 
-video{
+video {
     margin: auto;
-    width:100%;
+    width: 100%;
     height: auto;
     padding: 5px;
+}
+
+#secretCanvas{
+    display: none;
+    height: 512px;
+    width: 512px;
 }

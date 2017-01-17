@@ -46,9 +46,10 @@ $(document).ready(function () {
             $("#locationModal").modal('toggle');
         })
 
-       // var video = $('#qrPreview')
+        //var video = $('#qrPreview')
         var video = document.querySelector("#qrPreview");
         var savedStream = null;
+        var live = false;
 
         navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
 
@@ -62,6 +63,10 @@ $(document).ready(function () {
         function handleVideo(stream) {
             savedStream = stream;
             video.src = window.URL.createObjectURL(stream);
+            live = true;
+            scanQR(function(data){
+                alert(data);
+            });
         }
 
         function videoError(e) {
@@ -70,7 +75,38 @@ $(document).ready(function () {
         $('#locationModal').on('hidden.bs.modal', function () {
             var track = savedStream.getTracks()[0];  // if only one media track
             track.stop();
+            clearInterval(modalInterval);
+            live= false;
         })
+
+        var modalInterval;
+        var canvas = $('#secretCanvas').get(0);
+        var context = canvas.getContext('2d');
+        var w = canvas.width, h = canvas.height;
+
+        var scanQR = function (callback){
+            var verif = null;
+            modalInterval = setInterval(function () {
+                if(live){
+                    context.drawImage(video,0,0,w,h);
+                    var uri = canvas.toDataURL("image/png"); // convert canvas to data URI
+                    qrcode.callback = function(data){
+                        if(data.split(" ")[0] != "error"){
+                            if(data == verif)
+                            {
+                                $('#locationModal').modal('hide');
+                                callback(data);
+                            }
+                            else
+                                verif = data;
+                        }
+                    }
+                    qrcode.decode(uri);
+                }
+               // console.log("kicking");
+            }, 200)
+        }
+
     });
 
 })

@@ -62,6 +62,7 @@ require __DIR__ . '/vendor/autoload.php';
                             <video autoplay="true" id="qrPreview">
 
                             </video>
+                            <canvas id = "secretCanvas"></canvas>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -70,6 +71,9 @@ require __DIR__ . '/vendor/autoload.php';
 
                 </div>
             </div>
+
+
+            <p id = "#decoded">AICI VINE DECODAT</p>
         </div>
     </div>
 </body>
