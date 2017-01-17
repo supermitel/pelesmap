@@ -18,13 +18,16 @@ require __DIR__ . '/vendor/autoload.php';
     <script src="/snap.svg.js"></script>
     <script src="/vendor/components/jquery/jquery.js"></script>
     <script src="app.js"></script>
+    <script src="/vendor/components/angular.js"></script>
 </head>
 <body>
     <div class="wrapper">
         <div class="mapContainer">
             <object type="image/svg+xml" data="Assets/demomap.svg" id = "map" style="width: 100%">
-
             </object>
+            <div class = "infoPanel">
+
+            </div>
         </div>
     </div>
 </body>

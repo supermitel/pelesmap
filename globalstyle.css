@@ -8,8 +8,18 @@ body{
     background-image: url("/Assets/background.jpg");
     background-repeat: repeat-y;
     background-size: cover;
+    background-color: tan;
 }
 
 .mapContainer{
     box-shadow: 10px 10px 5px #888888;
+}
+
+.infoPanel{
+    min-height: 512px;
+    background-color: whitesmoke;
+}
+.roomDescription
+{
+
 }
