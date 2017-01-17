@@ -42,6 +42,9 @@
         .room:hover{
             cursor:pointer;
         }
+        #location:hover{
+            cursor:pointer;
+        }
     </style>
   <defs
      id="defs9143" />
@@ -103,7 +106,8 @@
            x="930.79395"
            y="963.80084"
            style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:50px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L Medium';text-align:center;text-anchor:middle;fill:#000000" /></flowRegion><flowPara
-         id="flowPara10140" /></flowRoot>    <rect
+         id="flowPara10140" /></flowRoot>
+    <rect
        style="opacity:1;fill:#ad9f7c;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.04900002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.56398106"
        id="leftPanel"
        width="182.19797"
@@ -114,7 +118,7 @@
        id="location"
        transform="matrix(0.17398069,0,0,0.17398069,23.145185,36.454553)">
       <path
-         id="path3468"
+         id="locationPath"
          d="m 512.001,302.46 c -115.762,0 -209.541,93.808 -209.541,209.541 0,115.761 93.779,209.541 209.541,209.541 115.819,0 209.538,-93.779 209.538,-209.541 0,-115.733 -93.719,-209.541 -209.538,-209.541 z"
          inkscape:connector-curvature="0" />
       <path
