@@ -1,6 +1,7 @@
 {
   "name": "ABC33/PelesMap",
   "description": "Interactive map of Peles castle",
+  "version":"0.0.1-dev",
   "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [

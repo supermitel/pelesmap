@@ -63,6 +63,10 @@ $(document).ready(function () {
             //TODO: treat castle name box as room for general info
             var roomInfo = getRoomInfo(currentLevel, room.roomNumber);
             updateRoomData(roomInfo);
+
+            $('html, body').animate({
+                scrollTop: $("#infoPanel").offset().top
+            }, 760);
         }
 
         var locationButton = snapMap.select("#location");

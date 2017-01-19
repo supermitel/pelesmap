@@ -18,6 +18,7 @@ body{
 .infoPanel{
     min-height: 512px;
     background-color: whitesmoke;
+    padding: 25px;
 }
 .roomDescription {
 }

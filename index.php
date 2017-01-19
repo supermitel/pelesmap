@@ -45,7 +45,7 @@ require __DIR__ . '/vendor/autoload.php';
         <div class="mapContainer">
             <object type="image/svg+xml" data="Assets/demomap.svg" id = "map" style="width: 100%">
             </object>
-            <div class = "infoPanel">
+            <div class = "infoPanel" id="infoPanel">
                 <h1 id = "roomName"></h1>
                 <p id = "roomDescription"></p>
                 <img id = "roomMainPicture" style="width: 480px; height: auto;">
