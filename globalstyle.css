@@ -11,7 +11,7 @@ body{
     background-color: tan;
 }
 
-.mapContainer{
+#mapContainer{
     box-shadow: 10px 10px 5px #888888;
 }
 
@@ -43,4 +43,14 @@ video {
     display: none;
     height: 512px;
     width: 512px;
+}
+
+.mainButton{
+    cursor: pointer;
+    padding: 10px;
+    background-color: #5c9ccc;
+}
+
+.mainButton:hover{
+    background-color: #5bc0de;
 }

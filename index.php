@@ -42,36 +42,50 @@ require __DIR__ . '/vendor/autoload.php';
 </head>
 <body>
     <div class="wrapper">
-        <div class="mapContainer">
+        <div id="mapContainer">
             <object type="image/svg+xml" data="Assets/demomap.svg" id = "map" style="width: 100%">
             </object>
-            <div class = "infoPanel" id="infoPanel">
+        </div>
+
+        <!-- TODO: FOR ABEL: design pentru informații camera (roomInfoPanel)
+            Fă asta să arate bine, așează-le frumos, css-ul este în globalstyle.css
+            Eu i-am pus câteva chestii să-i dau o formă, nu e necesar să le păstrezi. Doar id-urile lasă-le
+
+            Dacă mai ai timp ar fi fain să faci și un model de exhibitPanel (pentru exponate) eventual doar un șir în care încarc poze.
+        -->
+
+        <div class = "infoPanel" id="infoPanel">
+            <div id = "roomInfoPanel">
                 <h1 id = "roomName"></h1>
                 <p id = "roomDescription"></p>
-                <img id = "roomMainPicture" style="width: 480px; height: auto;">
+                <img id = "roomMainPicture" style="height: 480px;">
+                <div id = "goTopButton" class = "mainButton"><span class="glyphicon glyphicon-circle-arrow-up"></span> TOP</div>
             </div>
+            <div id = "exhibitPanel">
 
-            <div id="locationModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
+            </div>
+        </div>
 
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Scan the room QRcode or enter it below</h4>
-                        </div>
-                        <div class="modal-body">
-                            <video autoplay="true" id="qrPreview">
+        <div id="locationModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
 
-                            </video>
-                            <canvas id = "secretCanvas"></canvas>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Scan the room QRcode or enter it below</h4>
                     </div>
+                    <div class="modal-body">
+                        <video autoplay="true" id="qrPreview">
 
+                        </video>
+                        <canvas id = "secretCanvas"></canvas>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>

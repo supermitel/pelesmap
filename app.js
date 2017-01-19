@@ -14,6 +14,7 @@ $(document).ready(function () {
         });
 
         var currentLevel = 1;
+        var currentRoomInfo = null;
 
         try{
             for(var i = 1; i <= 21; i++){
@@ -61,8 +62,8 @@ $(document).ready(function () {
                 return;
             //console.log(castleInfo);
             //TODO: treat castle name box as room for general info
-            var roomInfo = getRoomInfo(currentLevel, room.roomNumber);
-            updateRoomData(roomInfo);
+            currentRoomInfo = getRoomInfo(currentLevel, room.roomNumber);
+            updateRoomData(currentRoomInfo);
 
             $('html, body').animate({
                 scrollTop: $("#infoPanel").offset().top
@@ -140,7 +141,19 @@ $(document).ready(function () {
                // console.log("kicking");
             }, 200)
         }
+        $('#goTopButton').click(function () {
+            $('html, body').animate({
+                scrollTop: $("#mapContainer").offset().top
+            }, 760);
+        })
 
+        $('#roomMainPicture').click(function () {
+            openGallery(currentRoomInfo);
+        })
+        
+        var openGallery = function () {
+            
+        }
+    
     });
-
 })
