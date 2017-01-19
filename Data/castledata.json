@@ -78,7 +78,7 @@
           "pictures":[
             {
               "label": "poza01",
-              "url": "http://lorempixel.com/480/640/"
+              "url": "http://lorempixel.com/480/480/"
             },
             {
               "label": "poza02",
@@ -142,7 +142,7 @@
           "pictures":[
             {
               "label": "poza01",
-              "url": "http://lorempixel.com/480/640/"
+              "url": "http://lorempixel.com/640/640/"
             },
             {
               "label": "poza02",

@@ -8,11 +8,19 @@ $(document).ready(function () {
         var rooms=[];
         var snapMap = Snap(svgdoc);
 
+        var castleInfo = null;
+        $.getJSON( "/Data/castledata.json", function( data ) {
+            castleInfo = data;
+        });
+
+        var currentLevel = 1;
+
         try{
             for(var i = 1; i <= 21; i++){
                 // console.log("gettig: " + "#Room"+("0"+i).slice(-2));
 
                 rooms[i] = snapMap.select("#Room"+("0"+i).slice(-2)).addClass("room");
+                rooms[i].roomNumber = i;
 
                 rooms[i].click(function () {
                     try{snapMap.select(".selected").removeClass("selected");}catch(e){};
@@ -31,8 +39,30 @@ $(document).ready(function () {
             alert(e);
         }
 
-        var selectRoom = function (room) {
+        var getRoomInfo = function (level, room) {
+            var levelId = "L"+("0"+level).slice(-2);
+            var roomId = levelId + "R"+("0"+room).slice(-2);
+            var levelInfo = castleInfo.levels[level-1];
+            for(var r in levelInfo.rooms){
+                if(levelInfo.rooms[r].id == roomId)
+                    return levelInfo.rooms[r];
+            }
+            return null;
+        }
+        
+        var updateRoomData = function (room) {
+            $("#roomName").text(room.name);
+            $("#roomDescription").text(room.description);
+            $("#roomMainPicture").attr('src', room.pictures[0].url);
+        }
 
+        var selectRoom = function (room) {
+            if(castleInfo == null)
+                return;
+            //console.log(castleInfo);
+            //TODO: treat castle name box as room for general info
+            var roomInfo = getRoomInfo(currentLevel, room.roomNumber);
+            updateRoomData(roomInfo);
         }
 
         var locationButton = snapMap.select("#location");

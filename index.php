@@ -46,7 +46,9 @@ require __DIR__ . '/vendor/autoload.php';
             <object type="image/svg+xml" data="Assets/demomap.svg" id = "map" style="width: 100%">
             </object>
             <div class = "infoPanel">
-
+                <h1 id = "roomName"></h1>
+                <p id = "roomDescription"></p>
+                <img id = "roomMainPicture" style="width: 480px; height: auto;">
             </div>
 
             <div id="locationModal" class="modal fade" role="dialog">
@@ -71,9 +73,6 @@ require __DIR__ . '/vendor/autoload.php';
 
                 </div>
             </div>
-
-
-            <p id = "#decoded">AICI VINE DECODAT</p>
         </div>
     </div>
 </body>
