@@ -38,11 +38,11 @@
               "pictures":[
                 {
                   "label":"din față",
-                  "url":"http://lorempixel.com/640/480/nature/"
+                  "url":"https://unsplash.it/640/641.jpg?random"
                 },
                 {
                   "label":"din lateral",
-                  "url":"http://lorempixel.com/640/480/nature/"
+                  "url":"http://lorempixel.com/643/480/nature/"
                 },
                 {
                   "label":"din spate",
@@ -60,15 +60,15 @@
               "pictures":[
                 {
                   "label":"văzut dimineața",
-                  "url":"http://lorempixel.com/640/480/abstract/"
+                  "url":"https://unsplash.it/640/643.jpg?random"
                 },
                 {
                   "label":"văzut la prânz",
-                  "url":"http://lorempixel.com/640/480/abstract/"
+                  "url":"http://lorempixel.com/642/480/abstract/"
                 },
                 {
                   "label":"văzut seara",
-                  "url":"http://lorempixel.com/640/480/abstract/"
+                  "url":"http://lorempixel.com/650/480/abstract/"
                 }
               ]
             }
@@ -108,7 +108,7 @@
               "pictures":[
                 {
                   "label": "poza01",
-                  "url": "http://lorempixel.com/480/640/"
+                  "url": "https://unsplash.it/646/640.jpg?random"
                 },
                 {
                   "label": "poza02",
@@ -134,7 +134,7 @@
               "pictures":[
                 {
                   "label": "poza01",
-                  "url": "http://lorempixel.com/640/640/"
+                  "url": "https://unsplash.it/640/648.jpg?random"
                 },
                 {
                   "label": "poza01",
@@ -148,7 +148,7 @@
               "pictures":[
                 {
                   "label": "poza01",
-                  "url": "http://lorempixel.com/640/640/"
+                  "url": "https://unsplash.it/641/640.jpg?random"
                 },
                 {
                   "label": "poza01",
@@ -202,7 +202,7 @@
               "pictures":[
                 {
                   "label": "poza01",
-                  "url": "https://unsplash.it/640/640.jpg?random?blur"
+                  "url": "https://unsplash.it/640/640.jpg?random"
                 },
                 {
                   "label": "poza01",

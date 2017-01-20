@@ -57,7 +57,7 @@ $(document).ready(function () {
             $('#roomSmallPictures').empty();
             $('#exhibitPictures').empty();
             for(var i = 1; i < room.pictures.length; i++){
-                    var newPictureContainer = $('<a class="col-sm-4" data-toggle="lightbox" data-gallery="room">').attr('href', room.pictures[i].url);
+                    var newPictureContainer = $('<a class="col-sm-3" data-toggle="lightbox" data-gallery="room">').attr('href', room.pictures[i].url);
                     var newPicture = $('<img class="img-fluid">').attr('src', room.pictures[i].url).attr('alt', room.pictures[i].label);
                     newPictureContainer.append(newPicture);
                     $('#roomSmallPictures').append(newPictureContainer);
