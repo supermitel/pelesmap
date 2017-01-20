@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "efed3bddec46f5686b9cab828396030e",
+    "content-hash": "2570717a735cefa424ac7a4dc03376df",
     "packages": [
         {
             "name": "components/bootstrap",
-            "version": "3.3.7",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/components/bootstrap.git",
-                "reference": "fe6e7683be66ba45a725816efdb51d4566733043"
+                "reference": "3b2f492e4e9a52825fae07e2fdb4a1e51011fb6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/components/bootstrap/zipball/fe6e7683be66ba45a725816efdb51d4566733043",
-                "reference": "fe6e7683be66ba45a725816efdb51d4566733043",
+                "url": "https://api.github.com/repos/components/bootstrap/zipball/3b2f492e4e9a52825fae07e2fdb4a1e51011fb6d",
+                "reference": "3b2f492e4e9a52825fae07e2fdb4a1e51011fb6d",
                 "shasum": ""
             },
             "require": {
@@ -72,7 +72,7 @@
                 "responsive",
                 "web"
             ],
-            "time": "2016-07-26T05:59:20+00:00"
+            "time": "2016-07-27 12:52:51"
         },
         {
             "name": "components/jquery",
@@ -455,6 +455,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "components/bootstrap": 20,
         "mindweb/jsqrcode": 20
     },
     "prefer-stable": false,

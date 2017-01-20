@@ -12,19 +12,23 @@
           "number": "01",
           "id": "L01R01",
           "name": "Marele Hol",
-          "description": "Pe-aici trecea lumea. Se mai făcea și câte un Bal din când în când",
+          "description": "Pe-aici trecea lumea. Se mai făcea și câte un Bal din când în când.        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet augue non eros vestibulum consequat ut eget velit. Vivamus aliquet quam ut neque suscipit, non eleifend purus aliquet. Praesent non gravida sem. Aenean pellentesque magna vitae lectus viverra laoreet. Donec tempor varius nunc, ut sagittis sem vehicula eu. Cras nisl odio, blandit in bibendum eget, aliquet sit amet orci. In tincidunt velit turpis. Nullam malesuada cursus libero a posuere. Pellentesque sit amet est a quam lacinia euismod id pellentesque augue. Suspendisse ipsum massa, accumsan ac est sed, tempor facilisis ante. Proin ac pharetra nulla. Phasellus tincidunt, ante non faucibus elementum, mi lectus fermentum magna, vitae laoreet erat mauris nec tellus. Donec ut turpis in lectus dictum euismod ac sit amet massa. Maecenas in tellus ut erat laoreet egestas. Ut tristique nisi leo, quis malesuada purus tincidunt sed. Nam hendrerit turpis dapibus nulla tristique, quis consectetur nunc imperdiet.",
           "pictures":[
             {
               "label": "poza01",
-              "url": "http://lorempixel.com/480/640/nature"
+              "url": "/Assets/ballroom.png"
             },
             {
               "label": "poza02",
-              "url": "http://lorempixel.com/480/480/"
+              "url": "/Assets/ballroom2.jpg"
             },
             {
               "label": "poza03",
-              "url": "http://lorempixel.com/640/480/"
+              "url": "https://unsplash.it/400/330.jpg"
+            },
+            {
+              "label": "poza04",
+              "url": "/Assets/ballroom2.jpg"
             }
           ],
           "exhibit":[
@@ -74,19 +78,27 @@
           "number": "02",
           "id": "L01R02",
           "name": "Sala Tronului",
-          "description": "Aici, marele rege Demo dădea porunci și împărțea legea.",
+          "description": "Aici, marele rege Demo dădea porunci și împărțea legea.                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet augue non eros vestibulum consequat ut eget velit. Vivamus aliquet quam ut neque suscipit, non eleifend purus aliquet. Praesent non gravida sem. Aenean pellentesque magna vitae lectus viverra laoreet. Donec tempor varius nunc, ut sagittis sem vehicula eu. Cras nisl odio, blandit in bibendum eget, aliquet sit amet orci. In tincidunt velit turpis. Nullam malesuada cursus libero a posuere. Pellentesque sit amet est a quam lacinia euismod id pellentesque augue. Suspendisse ipsum massa, accumsan ac est sed, tempor facilisis ante. Proin ac pharetra nulla. Phasellus tincidunt, ante non faucibus elementum, mi lectus fermentum magna, vitae laoreet erat mauris nec tellus. Donec ut turpis in lectus dictum euismod ac sit amet massa. Maecenas in tellus ut erat laoreet egestas. Ut tristique nisi leo, quis malesuada purus tincidunt sed. Nam hendrerit turpis dapibus nulla tristique, quis consectetur nunc imperdiet.     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet augue non eros vestibulum consequat ut eget velit. Vivamus aliquet quam ut neque suscipit, non eleifend purus aliquet. Praesent non gravida sem. Aenean pellentesque magna vitae lectus viverra laoreet. Donec tempor varius nunc, ut sagittis sem vehicula eu. Cras nisl odio, blandit in bibendum eget, aliquet sit amet orci. In tincidunt velit turpis. Nullam malesuada cursus libero a posuere. Pellentesque sit amet est a quam lacinia euismod id pellentesque augue. Suspendisse ipsum massa, accumsan ac est sed, tempor facilisis ante. Proin ac pharetra nulla. Phasellus tincidunt, ante non faucibus elementum, mi lectus fermentum magna, vitae laoreet erat mauris nec tellus. Donec ut turpis in lectus dictum euismod ac sit amet massa. Maecenas in tellus ut erat laoreet egestas. Ut tristique nisi leo, quis malesuada purus tincidunt sed. Nam hendrerit turpis dapibus nulla tristique, quis consectetur nunc imperdiet.",
           "pictures":[
             {
               "label": "poza01",
-              "url": "http://lorempixel.com/480/480/nature"
-            },
-            {
-              "label": "poza02",
-              "url": "http://lorempixel.com/480/480/"
+              "url": "https://unsplash.it/480/640.jpg?image=112"
             },
             {
               "label": "poza03",
-              "url": "http://lorempixel.com/640/480/"
+              "url": "https://unsplash.it/400/330.jpg?image=113"
+            },
+            {
+              "label": "poza03",
+              "url": "https://unsplash.it/400/330.jpg?image=114"
+            },
+            {
+              "label": "poza03",
+              "url": "https://unsplash.it/400/330.jpg?image=113"
+            },
+            {
+              "label": "poza03",
+              "url": "https://unsplash.it/400/330.jpg?image=115"
             }
           ],
           "exhibit":[
@@ -99,8 +111,20 @@
                   "url": "http://lorempixel.com/480/640/"
                 },
                 {
-                  "label": "poza01",
-                  "url": "http://lorempixel.com/480/480/"
+                  "label": "poza02",
+                  "url": "/Assets/throne.jpg"
+                },
+                {
+                  "label": "poza03",
+                  "url": "/Assets/throne.jpg"
+                },
+                {
+                  "label": "poza04",
+                  "url": "/Assets/throne.jpg"
+                },
+                {
+                  "label": "poza05",
+                  "url": "/Assets/throne.jpg"
                 }
               ]
             },
@@ -138,19 +162,23 @@
           "number": "03",
           "id": "L01R03",
           "name": "Sala de Consiliu",
-          "description": "Aici, marele rege Demo se sfătuia cu consilierii săi.",
+          "description": "Aici, marele rege Demo se sfătuia cu consilierii săi. \r\n  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu porta turpis. Vivamus vitae sollicitudin ante, vitae aliquam mauris. Aenean accumsan non elit rhoncus cursus. Aliquam eu diam non nunc feugiat lobortis vel sit amet sem. Nulla nec ex ipsum. Ut ac odio quis nisl dapibus tristique. Duis ut sagittis urna, malesuada condimentum dui. \r\n Mauris in tellus justo. Phasellus eget accumsan elit. Ut id elit non mauris mollis aliquet sed vitae est. Proin blandit lacus a erat laoreet cursus. Nunc dolor orci, pretium ac dolor non, porttitor vehicula dui. Praesent nec elit ipsum. Curabitur consequat nulla nec leo molestie lacinia. Integer non neque vitae nulla vulputate cursus vitae eu arcu. Maecenas ligula libero, viverra eu ipsum quis, eleifend maximus metus. \r\n \r\n Praesent bibendum quis turpis a efficitur. Nulla non dignissim lorem. Mauris molestie mauris sit amet ex feugiat ornare. Aenean nec blandit odio, nec tempus risus. Donec tempus condimentum nisi, vitae sollicitudin diam blandit id. Pellentesque lorem arcu, pulvinar faucibus ante eget, tempus interdum justo. Proin elit purus, tincidunt at viverra ut, eleifend et neque. ",
           "pictures":[
             {
               "label": "poza01",
-              "url": "http://lorempixel.com/640/640/nature"
-            },
-            {
-              "label": "poza02",
-              "url": "http://lorempixel.com/480/480/"
+              "url": "https://unsplash.it/640/640.jpg?image=93"
             },
             {
               "label": "poza03",
-              "url": "http://lorempixel.com/640/480/"
+              "url": "https://unsplash.it/400/330.jpg?image=111"
+            },
+            {
+              "label": "poza03",
+              "url": "https://unsplash.it/400/330.jpg?image=217"
+            },
+            {
+              "label": "poza03",
+              "url": "https://unsplash.it/400/330.jpg?image=103"
             }
           ],
           "exhibit":[
@@ -160,11 +188,11 @@
               "pictures":[
                 {
                   "label": "poza01",
-                  "url": "http://lorempixel.com/480/640/"
+                  "url": "https://unsplash.it/550/480.jpg?random?blur"
                 },
                 {
                   "label": "poza02",
-                  "url": "http://lorempixel.com/480/480/"
+                  "url": "https://unsplash.it/640/640.jpg?image=93"
                 }
               ]
             },
@@ -174,7 +202,7 @@
               "pictures":[
                 {
                   "label": "poza01",
-                  "url": "http://lorempixel.com/480/640/technics/"
+                  "url": "https://unsplash.it/640/640.jpg?random?blur"
                 },
                 {
                   "label": "poza01",

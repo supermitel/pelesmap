@@ -24,8 +24,6 @@ $(document).ready(function () {
                 rooms[i].roomNumber = i;
 
                 rooms[i].click(function () {
-                    try{snapMap.select(".selected").removeClass("selected");}catch(e){};
-                    this.addClass("selected");
                     selectRoom(this);
                 })
                 rooms[i].mouseover(function () {
@@ -53,11 +51,29 @@ $(document).ready(function () {
         
         var updateRoomData = function (room) {
             $("#roomName").text(room.name);
-            $("#roomDescription").text(room.description);
+            $("#roomDescription").text(decodeURI(room.description));
             $("#roomMainPicture").attr('src', room.pictures[0].url);
+            $("#roomMainPictureContainer").attr('href', room.pictures[0].url);
+            $('#roomSmallPictures').empty();
+            $('#exhibitPictures').empty();
+            for(var i = 1; i < room.pictures.length; i++){
+                    var newPictureContainer = $('<a class="col-sm-4" data-toggle="lightbox" data-gallery="room">').attr('href', room.pictures[i].url);
+                    var newPicture = $('<img class="img-fluid">').attr('src', room.pictures[i].url).attr('alt', room.pictures[i].label);
+                    newPictureContainer.append(newPicture);
+                    $('#roomSmallPictures').append(newPictureContainer);
+
+            }
+            for(var i = 0; i < room.exhibit.length; i++){
+                var newPictureContainer = $('<a class="col-sm-2" data-toggle="lightbox" data-gallery="exhibit">').attr('href', room.exhibit[i].pictures[0].url);
+                var newPicture = $('<img class="img-fluid">').attr('src', room.exhibit[i].pictures[0].url).attr('alt', room.exhibit[i].pictures[0].label);
+                newPictureContainer.append(newPicture);
+                $('#exhibitPictures').append(newPictureContainer);
+            }
         }
 
         var selectRoom = function (room) {
+            try{snapMap.select(".selected").removeClass("selected");}catch(e){};
+            room.addClass("selected");
             if(castleInfo == null)
                 return;
             //console.log(castleInfo);
@@ -94,13 +110,21 @@ $(document).ready(function () {
                 }
         })
 
+        function roomIdDecode(code) {
+            currentLevel = code.split("R")[0].split("L")[1];
+            return parseInt(code.split("R")[1]);
+        }
 
         function handleVideo(stream) {
             savedStream = stream;
             video.src = window.URL.createObjectURL(stream);
             live = true;
             scanQR(function(data){
-                alert(data);
+                //alert(data);
+                var decoded = roomIdDecode(data);
+                if(decoded == undefined)
+                    alert(data + "not reconized as room code");
+                selectRoom(rooms[decoded]);
             });
         }
 
@@ -152,8 +176,51 @@ $(document).ready(function () {
         })
         
         var openGallery = function () {
-            
+
         }
+
+        //$('body').css('background-image', 'url("/Assets/background.jpg")');
     
     });
+
+    // LightBox stuff (for image gallery)
+
+    $(document).on('click', '[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', function(event) {
+        event.preventDefault();
+        return $(this).ekkoLightbox({
+            onShown: function() {
+                if (window.console) {
+                    return console.log('Checking our the events huh?');
+                }
+            },
+            onNavigate: function(direction, itemIndex) {
+                if (window.console) {
+                    return console.log('Navigating '+direction+'. Current item: '+itemIndex);
+                }
+            }
+        });
+    });
+    //Programmatically call
+    $('#open-image').click(function (e) {
+        e.preventDefault();
+        $(this).ekkoLightbox();
+    });
+    $('#open-youtube').click(function (e) {
+        e.preventDefault();
+        $(this).ekkoLightbox();
+    });
+    // navigateTo
+    $(document).on('click', '[data-toggle="lightbox"][data-gallery="navigateTo"]', function(event) {
+        event.preventDefault();
+        return $(this).ekkoLightbox({
+            onShown: function() {
+                this.modal().on('click', '.modal-footer a', function(e) {
+                    e.preventDefault();
+                    this.navigateTo(2);
+                }.bind(this));
+            }
+        });
+    });
+
+
 })

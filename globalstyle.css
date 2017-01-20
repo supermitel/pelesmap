@@ -1,42 +1,29 @@
 .wrapper{
+    padding-top: 32px;
     width: 100%;
     max-width: 1256px;
     margin: auto;
 }
 
 body{
-    background-image: url("/Assets/background.jpg");
-    background-repeat: repeat-y;
-    background-size: cover;
+    /*background-repeat: repeat-y;*/
+    /*background-size: cover;*/
     background-color: tan;
 }
 
 #mapContainer{
-    box-shadow: 10px 10px 5px #888888;
+    /*box-shadow: 10px 10px 5px #888888;*/
+    margin: 10px;
 }
 
-.infoPanel{
-    min-height: 512px;
-    background-color: whitesmoke;
-    padding: 25px;
-}
-.roomDescription {
+#map{
+    max-height: 100vh;
 }
 
-.modal-dialog{
-    max-width: 100% !important;
-    width: 500px !important;
-}
-
-.modal-content{
+video{
+    max-height: 100%;
+    max-width: 100%;
     overflow: hidden;
-}
-
-video {
-    margin: auto;
-    width: 100%;
-    height: auto;
-    padding: 5px;
 }
 
 #secretCanvas{
@@ -54,3 +41,47 @@ video {
 .mainButton:hover{
     background-color: #5bc0de;
 }
+
+.infoPanel{
+    min-height: 512px;
+    background-color: whitesmoke;
+    padding: 25px;
+    overflow: hidden;
+}
+
+#roomInfoPanel{
+    overflow: hidden;
+}
+
+#roomTextPanel{
+    float:left;
+    max-width: 600px;
+}
+
+#roomPictureGallery{
+    max-width: 480px;
+    float:right;
+    overflow: hidden;
+}
+
+#exhibitPanel a{
+    display: block;
+    overflow: hidden;
+}
+
+#roomMainPicture{
+    max-width: 100%;
+    max-height: 600px;
+}
+
+#roomSmallPictures a{
+    vertical-align: middle;
+    display: inline-flex;
+    height: 100%;
+    padding-bottom: 12px;
+}
+
+a img:hover{
+    box-shadow: 10px 10px 5px #888888;
+}
+

@@ -13,14 +13,22 @@ require __DIR__ . '/vendor/autoload.php';
 <head>
     <title>PelesMap</title>
     <meta charset="UTF-16">
+    <meta name="viewport" content="width=device-width, height=device-height initial-scale=1.0">
+
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="/vendor/components/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/vendor/drmonty/ekko-lightbox/css/ekko-lightbox.min.css"/>
     <link rel="stylesheet" href="globalstyle.css"/>
-    <link rel="stylesheet" href="/vendor/components/bootstrap/css/bootstrap.css"/>
-    <link rel="stylesheet" href="/vendor/drmonty/ekko-lightbox/css/ekko-lightbox.css"/>
+
     <script src="/snap.svg.js"></script>
     <script src="/vendor/components/jquery/jquery.js"></script>
     <script src="/vendor/components/bootstrap/js/bootstrap.js"></script>
-    <!-- <script src="/vendor/drmonty/ekko-lightbox/js/ekko-lightbox.js"></script> -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.3/js/bootstrap.min.js"></script>
+    <script src="/vendor/drmonty/ekko-lightbox/js/ekko-lightbox.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.1/anchor.min.js"></script>
+
     <script type="text/javascript" src="vendor/mindweb/jsqrcode/src/grid.js"></script>
     <script type="text/javascript" src="vendor/mindweb/jsqrcode/src/version.js"></script>
     <script type="text/javascript" src="vendor/mindweb/jsqrcode/src/detector.js"></script>
@@ -38,6 +46,7 @@ require __DIR__ . '/vendor/autoload.php';
     <script type="text/javascript" src="vendor/mindweb/jsqrcode/src/findpat.js"></script>
     <script type="text/javascript" src="vendor/mindweb/jsqrcode/src/alignpat.js"></script>
     <script type="text/javascript" src="vendor/mindweb/jsqrcode/src/databr.js"></script>
+
     <script src="app.js"></script>
 </head>
 <body>
@@ -56,18 +65,34 @@ require __DIR__ . '/vendor/autoload.php';
 
         <div class = "infoPanel" id="infoPanel">
             <div id = "roomInfoPanel">
-                <h1 id = "roomName"></h1>
-                <p id = "roomDescription"></p>
-                <img id = "roomMainPicture" style="height: 480px;">
-                <div id = "goTopButton" class = "mainButton"><span class="glyphicon glyphicon-circle-arrow-up"></span> TOP</div>
-            </div>
-            <div id = "exhibitPanel">
+                <div id="roomTextPanel">
+                    <h1 id = "roomName"></h1>
+                    <hr>
+                    <p id = "roomDescription"></p>
+                </div>
+                <div id = "roomPictureGallery" class="container">
+                    <a href = "#" id = "roomMainPictureContainer" data-toggle="lightbox" data-gallery="room">
+                        <img id = "roomMainPicture" class="img-fluid">
+                    </a>
+                    <hr>
+                    <div id = "roomSmallPictures" class="row">
 
+                    </div>
+                </div>
             </div>
+            <hr>
+            <div id = "exhibitPanel" class="container">
+                <h2>Exponate: </h2>
+                <div class="row gallery" id = "exhibitPictures">
+
+                </div>
+            </div>
+            <hr>
+            <div id = "goTopButton" class = "mainButton"><span class="glyphicon glyphicon-circle-arrow-up"></span> TOP</div>
         </div>
 
         <div id="locationModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-lg">
 
                 <!-- Modal content-->
                 <div class="modal-content">
@@ -88,5 +113,10 @@ require __DIR__ . '/vendor/autoload.php';
 
             </div>
         </div>
+
+
+
+
+
     </div>
 </body>
