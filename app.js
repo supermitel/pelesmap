@@ -11,6 +11,7 @@ $(document).ready(function () {
         var castleInfo = null;
         $.getJSON( "/Data/castledata.json", function( data ) {
             castleInfo = data;
+            updateRoomData(castleInfo);
         });
 
         var currentLevel = 1;

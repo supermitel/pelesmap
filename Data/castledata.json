@@ -1,7 +1,25 @@
 {
-  "name":"castelul Demo",
+  "name":"Demo Casle",
   "descriptionShort":"Castelul Demo este extraordinar",
-  "descriptionLong":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices nunc neque, quis cursus nulla cursus sed. Integer laoreet sit amet nisi at consequat. Aliquam elementum aliquet lectus ac lacinia. Sed lacinia nisl at lorem laoreet tempor eu id nulla. Sed vitae faucibus quam. Donec et nibh et dolor sagittis fringilla gravida eget leo. Fusce molestie massa vel tellus volutpat scelerisque. Quisque dignissim ultrices nisl dictum consequat. Pellentesque sit amet massa finibus, malesuada lectus vel, fermentum quam. Pellentesque condimentum tortor augue. Donec condimentum scelerisque augue vel suscipit. Suspendisse non feugiat erat. Mauris quis auctor lectus, vitae tincidunt tortor. Donec ullamcorper neque eget euismod porttitor. Praesent odio tortor, tempor in facilisis a, vulputate quis purus. Donec dictum erat in leo sollicitudin, sed sollicitudin sem tincidunt. ",
+  "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices nunc neque, quis cursus nulla cursus sed. Integer laoreet sit amet nisi at consequat. Aliquam elementum aliquet lectus ac lacinia. Sed lacinia nisl at lorem laoreet tempor eu id nulla. Sed vitae faucibus quam. Donec et nibh et dolor sagittis fringilla gravida eget leo. Fusce molestie massa vel tellus volutpat scelerisque. Quisque dignissim ultrices nisl dictum consequat. Pellentesque sit amet massa finibus, malesuada lectus vel, fermentum quam. Pellentesque condimentum tortor augue. Donec condimentum scelerisque augue vel suscipit. Suspendisse non feugiat erat. Mauris quis auctor lectus, vitae tincidunt tortor. Donec ullamcorper neque eget euismod porttitor. Praesent odio tortor, tempor in facilisis a, vulputate quis purus. Donec dictum erat in leo sollicitudin, sed sollicitudin sem tincidunt. ",
+  "pictures":[
+    {
+      "label": "poza01",
+      "url": "https://unsplash.it/400/480.jpg"
+    },
+    {
+      "label": "poza02",
+      "url": "https://unsplash.it/400/330.jpg"
+    },
+    {
+      "label": "poza03",
+      "url": "https://unsplash.it/400/330.jpg"
+    },
+    {
+      "label": "poza04",
+      "url": "/Assets/ballroom2.jpg"
+    }
+  ],
   "levels":[
     {
       "name": "Etajul 1",

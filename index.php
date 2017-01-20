@@ -56,13 +56,6 @@ require __DIR__ . '/vendor/autoload.php';
             </object>
         </div>
 
-        <!-- TODO: FOR ABEL: design pentru informații camera (roomInfoPanel)
-            Fă asta să arate bine, așează-le frumos, css-ul este în globalstyle.css
-            Eu i-am pus câteva chestii să-i dau o formă, nu e necesar să le păstrezi. Doar id-urile lasă-le
-
-            Dacă mai ai timp ar fi fain să faci și un model de exhibitPanel (pentru exponate) eventual doar un șir în care încarc poze.
-        -->
-
         <div class = "infoPanel" id="infoPanel">
             <div id = "roomInfoPanel">
                 <div id="roomTextPanel">
